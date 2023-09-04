@@ -1,0 +1,131 @@
+.chat-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chat-content .user-list {
+  position: absolute;
+}
+
+.chat-content .user-list .open-menu {
+  background-color: #1b222c;
+  width: 200px;
+  padding: 20px;
+  height: 100vh;
+  color: white;
+}
+
+.chat-content .user-list .open-menu button{
+  margin-bottom: 20px;
+}
+
+.chat-content .user-list button {
+  padding: 5px 10px;
+  background-color: #6f85a4;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.chat-content .notification {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.chat-content .notification p{
+  background-color: #d6c6c0;
+  margin-bottom: 2px;
+  padding: 1px 10px;
+}
+
+.chat-content .notification p.danger{
+  background-color: #f15a22;
+  padding: 1px 10px;
+}
+
+.chat-content .notification p.alert{
+  background-color: #a2f122;
+  padding: 1px 10px;
+}
+
+.chat-content .messages {
+  max-height: calc(100vh - 50px);
+  height: calc(100vh - 50px);
+  overflow: auto;
+}
+
+.chat-content .form-input {
+  height: 50px;
+  background-color: #333c49;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.chat-content .form-input input{
+  width: calc(100% - 30%);
+  background-color: transparent;
+  color: #e4e4e4;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  border-bottom: 1px solid #1b222c;
+}
+
+.chat-content .form-input button{
+  background-color: #1b222c;
+  border: 0;
+  outline: 0;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: #acb4be;
+  cursor: pointer;
+}
+
+.chat-content .form-input button:hover{
+  background-color: #262e3a;
+}
+
+.chat-content .messages{
+  padding: 20px;
+  max-width: 900px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.chat-content .messages .message-container {
+  width: 100%;
+  display: flex;
+}
+
+.chat-content .messages .single-message{
+  background-color: rgb(222, 222, 222);
+  border-radius: 3px;
+  width: 90%;
+  max-width: 400px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.chat-content .messages .single-message .author-name{
+  text-align: right;
+  font-weight: bold;
+  color: #1a3b69;
+}
+
+.chat-content .messages .user-message{
+  justify-content: right;
+}
+
+.chat-content .messages .user-message .single-message{
+  background-color: #6f85a4;
+}
+
+.chat-content .bottom-chat {
+  transform: translateY(60px);
+  width: 1px;
+  height: 1px;
+}

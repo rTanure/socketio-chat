@@ -1,0 +1,37 @@
+.join-content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.join-content .form-login {
+  background-color: #1b222c;
+  padding: 20px;
+  border-radius: 10px;
+  color: #aeb2b8;
+}
+
+.join-content input {
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 20px;
+  border: 0;
+  border-bottom: 1px solid gray;
+  color: #aeb2b8;
+  outline: 0;
+}
+
+.join-content input:focus {
+  border-bottom: 2px solid #531516;
+}
+
+.join-content button {
+  margin-left: 10px;
+  background-color: #531516;
+  border: 0;
+  border-radius: 5px;
+  padding: 3px 5px;
+  color: #aeb2b8;
+  cursor: pointer;
+}
