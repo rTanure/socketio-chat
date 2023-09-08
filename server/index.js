@@ -1,14 +1,8 @@
 const app = require("express")()
 const server = require("http").createServer(app)
 const io = require('socket.io')(server, {
-  cors: {
-      origin: "https://chat.richardytanure.com/",
-      methods: ["GET", "POST"],
-      transports: ['websocket', 'polling'],
-      credentials: true
-  },
-  allowEIO3: true
-});
+    transports: ['websocket'],
+  });
 // const io = require("socket.io")(server, {cors: {origin: "https://chat.richardytanure.com/"}})
 
 const PORT = process.env.PORT || 3001
