@@ -5,7 +5,7 @@ const io = require('socket.io')(server, {
     origin: "https://chat.richardytanure.com",
     methods: ["GET", "POST"],
     transports: ['websocket', 'polling'],
-    allowedHeaders: ["Access-Control-Allow-Origin"],
+    allowedHeaders: ["Access-Control-Allow-Origin: *"],
     allowEIO3: true
   }
 })
