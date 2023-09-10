@@ -10,7 +10,7 @@ export default function Join({setChatVisibility, setSocket}) {
     const username = usernameRef.current.value
     if(!username.trim()) return
     // const socket = await io.connect('http://localhost:3001')
-    const socket = await io.connect('https://socketio-chat-server.vercel.app/')
+    const socket = await io.connect('https://socketio-chat-server.onrender.com')
     socket.emit('set_username', username)
     setSocket(socket)
     setChatVisibility(true)
